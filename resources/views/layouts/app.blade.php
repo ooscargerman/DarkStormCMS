@@ -165,92 +165,10 @@
                                            <i class="fa fa-shopping-basket"></i>  SHOP
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" href="#">
-                                                    DEFAULT
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-default-aside-left.html">LEFT SIDEBAR</a></li>
-                                                    <li><a href="blog-default-aside-right.html">RIGHT SIDEBAR</a></li>
-                                                    <li><a href="blog-default-aside-both.html">BOTH SIDEBAR</a></li>
-                                                    <li><a href="blog-default-fullwidth.html">FULL WIDTH</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" href="#">
-                                                    GRID
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-column-2colums.html">2 COLUMNS</a></li>
-                                                    <li><a href="blog-column-3colums.html">3 COLUMNS</a></li>
-                                                    <li><a href="blog-column-4colums.html">4 COLUMNS</a></li>
-                                                    <li class="divider"></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" href="#">
-                                                    MASONRY
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-masonry-2colums.html">2 COLUMNS</a></li>
-                                                    <li><a href="blog-masonry-3colums.html">3 COLUMNS</a></li>
-                                                    <li><a href="blog-masonry-4colums.html">4 COLUMNS</a></li>
-                                                    <li><a href="blog-masonry-fullwidth.html">FULLWIDTH</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" href="#">
-                                                    TIMELINE
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-timeline-aside-left.html">LEFT SIDEBAR</a></li>
-                                                    <li><a href="blog-timeline-aside-right.html">RIGHT SIDEBAR</a></li>
-                                                    <li><a href="blog-timeline-right-aside-right.html">RIGHT + TIMELINE RIGHT</a></li>
-                                                    <li><a href="blog-timeline-right-aside-left.html">LEFT + TIMELINE RIGHT</a></li>
-                                                    <li><a href="blog-timeline-fullwidth-left.html">FULL WIDTH - LEFT</a></li>
-                                                    <li><a href="blog-timeline-fullwidth-right.html">FULL WIDTH - RIGHT</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" href="#">
-                                                    SMALL IMAGE
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-smallimg-aside-left.html">LEFT SIDEBAR</a></li>
-                                                    <li><a href="blog-smallimg-aside-right.html">RIGHT SIDEBAR</a></li>
-                                                    <li><a href="blog-smallimg-aside-both.html">BOTH SIDEBAR</a></li>
-                                                    <li><a href="blog-smallimg-fullwidth.html">FULL WIDTH</a></li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="blog-smallimg-alternate-1.html">ALTERNATE 1</a></li>
-                                                    <li><a href="blog-smallimg-alternate-2.html">ALTERNATE 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" href="#">
-                                                    SINGLE
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-single-default.html">DEFAULT</a></li>
-                                                    <li><a href="blog-single-aside-left.html">LEFT SIDEBAR</a></li>
-                                                    <li><a href="blog-single-aside-right.html">RIGHT SIDEBAR</a></li>
-                                                    <li><a href="blog-single-fullwidth.html">FULL WIDTH</a></li>
-                                                    <li><a href="blog-single-small-image-left.html">SMALL IMAGE - LEFT</a></li>
-                                                    <li><a href="blog-single-small-image-right.html">SMALL IMAGE - RIGHT</a></li>
-                                                    <li><a href="blog-single-big-image.html">BIG IMAGE</a></li>
-                                                    <li><a href="blog-single-fullwidth-image.html">FULLWIDTH IMAGE</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a class="dropdown-toggle" href="#">
-                                                    COMMENTS
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="blog-comments-bordered.html#comments">BORDERED COMMENTS</a></li>
-                                                    <li><a href="blog-comments-default.html#comments">DEFAULT COMMENTS</a></li>
-                                                    <li><a href="blog-comments-facebook.html#comments">FACEBOOK COMMENTS</a></li>
-                                                    <li><a href="blog-comments-disqus.html#comments">DISQUS COMMENTS</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="/shop"><i class="fa fa-rocket"></i> SHIPS</a></li>
+                                            <li><a href="/shop/drones"><i class="fa fa-dot-circle-o"></i> DRONES</a></li>
+                                            <li><a href="shortcode-animations.html"><i class="et-expand"></i> ANIMATIONS</a></li>
+                                           
                                         </ul>
                                     </li>
                                      
