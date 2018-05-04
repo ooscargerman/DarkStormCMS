@@ -32,3 +32,6 @@ Route::post('/clan', 'ClanController@createClan')->name('clan');
 // Shop
 
 Route::get('/shop', 'ShopController@index')->name('shop');
+Route::post('/shop', 'ShopController@buy')->name('shop');
+Route::get('/shop/drones', 'ShopController@drones')->name('drones');
+Route::post('/shop/drones', 'ShopController@buy')->name('drones');

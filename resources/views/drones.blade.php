@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <link href="assets/css/layout-shop.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/layout-shop.css')}}" rel="stylesheet" type="text/css" />
 
     <section>
         <div class="container">
@@ -70,7 +70,7 @@
                         </div>
                     @endif
                     <ul class="shop-item-list row list-inline nomargin">
-                    @foreach($ships as $ship)
+                    @foreach($drones as $drone)
                         <!-- ITEM -->
                             <li class="col-lg-3 col-sm-3">
 
@@ -79,8 +79,8 @@
                                     <div class="thumbnail">
                                         <!-- product image(s) -->
                                         <a class="shop-item-image" href="shop-single-left.html">
-                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$ship->image}}" alt="shop first image" />
-                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$ship->image}}" alt="shop hover image" />
+                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$drone->image}}"  />
+                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$drone->image}}" />
                                         </a>
                                         <!-- /product image(s) -->
 
@@ -94,18 +94,18 @@
                                     </div>
 
                                     <div class="shop-item-summary text-center">
-                                        <h2>{{$ship->name}}</h2>
+                                        <h2>{{$drone->name}}</h2>
 
                                         <!-- price -->
                                         <div class="shop-item-price">
-                                            <h5>{{$ship->price}} @if ($ship->currency == "uridium") <small style="font-color:white;"><i class="glyphicon glyphicon-magnet"></i></small>@else <i class="glyphicon glyphicon-copyright-mark"></i> @endif</h5>
+                                            <h5>{{$drone->price}} @if ($drone->currency == "uridium") <small style="font-color:white;"><i class="glyphicon glyphicon-magnet"></i></small>@else <i class="glyphicon glyphicon-copyright-mark"></i> @endif</h5>
                                         </div>
                                         <!-- /price -->
                                     </div>
                                     <!-- buttons -->
-                                    <form method="POST" action="{{ route('shop') }}">
+                                    <form method="POST" action="{{ route('drones') }}">
                                         @csrf
-                                        <input name="id" value="{{$ship->loot_id}}" class="hidden"/>
+                                        <input name="id" value="{{$drone->loot_id}}" class="hidden"/>
                                     <div class="shop-item-buttons text-center">
                                         <button type="submit" class="btn btn-success"><i class="fa fa-cart-plus"></i> Buy</button>
                                     </div>
@@ -127,7 +127,7 @@
 
                     <!-- Pagination Default -->
                     <div class="text-center">
-                        {{ $ships->links() }}
+                        {{ $drones->links() }}
                     </div>
                     <!-- /Pagination Default -->
 
@@ -188,6 +188,6 @@
     <!-- / -->
 
     <!-- PAGE LEVEL SCRIPTS -->
-    <script src="assets/js/view/demo.shop.js"></script>
+    <script src="{{ asset('assets/js/view/demo.shop.js')}}"></script>
 
     @endsection

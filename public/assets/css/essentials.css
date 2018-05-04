@@ -481,7 +481,7 @@ h6 > span {
 .margin-bottom-30	{ margin-bottom:30px !important; }
 .margin-bottom-40	{ margin-bottom:40px !important; }
 .margin-bottom-50	{ margin-bottom:50px !important; }
-.margin-bottom-60	{ margin-bottom:60px !important; }
+.margin-bottom-60	{margin-bottom:60px !important;opacity: 0.8;}
 .margin-bottom-80	{ margin-bottom:80px !important; }
 .margin-bottom-100	{ margin-bottom:100px !important; }
 .margin-bottom-130	{ margin-bottom:130px !important; }
@@ -11111,7 +11111,7 @@ div.side-nav ul>li>a {
 	padding:4px 0 4px 0;
 }
 div.side-nav ul>li>a {
-	color:#777;
+	color:#FFFFFF;
 	text-decoration:none;
 }
 div.side-nav ul>li:hover>a,
@@ -11167,6 +11167,7 @@ div.side-nav ul>li>ul>li a {
 /* */
 div.side-nav .side-nav-head {
 	position:relative;
+	margin-top: 6px;
 }
 div.side-nav .side-nav-head h4 {
 	font-size:16px;
@@ -11179,6 +11180,7 @@ div.side-nav ul.list-group-bordered>li>a {
 div.side-nav ul.list-group-bordered>li>a>span.pull-left,
 div.side-nav ul.list-group-bordered>li>a>span.pull-right {
 	margin-top:3px;
+	color:  #fff;
 }
 div.side-nav .side-nav-head button {
 	display:none;
