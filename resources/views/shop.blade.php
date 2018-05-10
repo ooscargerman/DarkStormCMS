@@ -21,18 +21,13 @@
                                 <div class="display-table">
                                     <div class="display-table-cell vertical-align-middle">
                                         <div class="caption-container text-left">
-                                            <h2>SHOP <strong>NOW</strong> &ndash; 50% OFF</h2>
-                                            <p>
-                                                This is a category banner rotator<br />
-                                                for any category of your shop.
-                                            </p>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <img class="img-responsive radius-4" src="assets/images/demo/shop/banners/top_2.png" width="851" height="335" alt="">
-                        </div>
+                              </div>
                         <!-- /item -->
 
                         <!-- item -->
@@ -42,18 +37,13 @@
                                 <div class="display-table">
                                     <div class="display-table-cell vertical-align-middle">
                                         <div class="caption-container text-left">
-                                            <h2>LOREM IPSUM <strong>DOLOR</strong></h2>
-                                            <p>
-                                                Unlimited designs, unlimited combinations <br />
-                                                imagination is the limit!
-                                            </p>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <img class="img-responsive radius-4" src="assets/images/demo/shop/banners/top_1.png" width="851" height="335" alt="">
-                        </div>
+                           </div>
                         <!-- /item -->
 
                     </div>
@@ -78,9 +68,9 @@
 
                                     <div class="thumbnail">
                                         <!-- product image(s) -->
-                                        <a class="shop-item-image" href="shop-single-left.html">
-                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$ship->image}}" alt="shop first image" />
-                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$ship->image}}" alt="shop hover image" />
+                                        <a class="shop-item-image" >
+                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$ship->image}}"  />
+                                            <img class="img-responsive" src="/assets/images/shop/ships/{{$ship->image}}"  />
                                         </a>
                                         <!-- /product image(s) -->
 
@@ -148,9 +138,12 @@
                         </div>
 
                         <ul class="list-group list-group-bordered list-group-noicon uppercase">
-                            <li class="list-group-item"><a href="/shop"><span class="size-11 text-muted pull-right">({{ $ships_total }})</span> SHIPS</a></li>
+                            <li class="list-group-item active"><a href="/shop"><span class="size-11 text-muted pull-right">({{ $ships_total }})</span> SHIPS</a></li>
                             <li class="list-group-item"><a href="/shop/drones"><span class="size-11 text-muted pull-right">({{ $drones_total }})</span> DRONES</a></li>
-
+                            <li class="list-group-item"><a href="/shop/equipment"><span class="size-11 text-muted pull-right">({{ $equipment_total }})</span> EQUIPMENT</a></li>
+                            <li class="list-group-item"><a href="/shop/ammo"><span class="size-11 text-muted pull-right">({{ $ammo_total }})</span> AMMO</a></li>
+                            <li class="list-group-item"><a href="/shop/extras"><span class="size-11 text-muted pull-right">({{ $extras_total }})</span> EXTRAS</a></li>
+                            <li class="list-group-item"><a href="/shop/designs"><span class="size-11 text-muted pull-right">({{ $designs_total }})</span> DESIGNS</a></li>
                         </ul>
 
                     </div>

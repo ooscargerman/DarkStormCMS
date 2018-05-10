@@ -46,6 +46,7 @@ return array(
     'DarkStorm\\User' => $baseDir . '/app/User.php',
     'DarkStorm\\clans' => $baseDir . '/app/clans.php',
     'DarkStorm\\shop' => $baseDir . '/app/shop.php',
+    'DarkStorm\\users_items' => $baseDir . '/app/users_items.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
     'DeepCopy\\Exception\\CloneException' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',

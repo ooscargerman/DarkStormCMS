@@ -385,6 +385,7 @@ class ComposerStaticInitc9bafcee5cac3b00e49ea3eda9e93526
         'DarkStorm\\User' => __DIR__ . '/../..' . '/app/User.php',
         'DarkStorm\\clans' => __DIR__ . '/../..' . '/app/clans.php',
         'DarkStorm\\shop' => __DIR__ . '/../..' . '/app/shop.php',
+        'DarkStorm\\users_items' => __DIR__ . '/../..' . '/app/users_items.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',

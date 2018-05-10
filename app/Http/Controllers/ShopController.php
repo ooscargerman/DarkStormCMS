@@ -25,6 +25,7 @@ class ShopController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+
     }
 
     /**
@@ -37,15 +38,72 @@ class ShopController extends Controller
         $ships = shop::where('type', 1)->orderBy('id')->paginate(12);
         $ships_total = shop::where('type', 1)->count();
         $drones_total = shop::where('type', 2)->count();
-
-        return view('shop', ['ships' => $ships, 'ships_total' => $ships_total, 'drones_total' => $drones_total]);
+        $equipment_total = shop::where('type', 3)->count();
+        $ammo_total = shop::where('type', 4)->count();
+        $extras_total = shop::where('type', 5)->count();
+        $designs_total = shop::where('type', 6)->count();
+        return view('shop', ['ships' => $ships, 'ships_total' => $ships_total, 'drones_total' => $drones_total,
+            'equipment_total' => $equipment_total, 'ammo_total' => $ammo_total, 'designs_total' => $designs_total, 'extras_total' => $extras_total]);
     }
     public function drones()
     {
         $drones = shop::where('type', 2)->orderBy('id')->paginate(12);
         $ships_total = shop::where('type', 1)->count();
         $drones_total = shop::where('type', 2)->count();
-        return view('drones', ['drones' => $drones, 'ships_total' => $ships_total, 'drones_total' => $drones_total]);
+        $equipment_total = shop::where('type', 3)->count();
+        $ammo_total = shop::where('type', 4)->count();
+        $extras_total = shop::where('type', 5)->count();
+        $designs_total = shop::where('type', 6)->count();
+        return view('drones', ['drones' => $drones, 'ships_total' => $ships_total, 'drones_total' => $drones_total,
+            'equipment_total' => $equipment_total, 'ammo_total' => $ammo_total, 'designs_total' => $designs_total, 'extras_total' => $extras_total]);
+    }
+    public function equipment(){
+        $equipments = shop::where('type', 3)->orderBy('id')->paginate(12);
+        $ships_total = shop::where('type', 1)->count();
+        $drones_total = shop::where('type', 2)->count();
+        $equipment_total = shop::where('type', 3)->count();
+        $ammo_total = shop::where('type', 4)->count();
+        $extras_total = shop::where('type', 5)->count();
+        $designs_total = shop::where('type', 6)->count();
+        return view('equipmentshop', ['equipments' => $equipments, 'ships_total' => $ships_total, 'drones_total' => $drones_total,
+            'equipment_total' => $equipment_total, 'ammo_total' => $ammo_total, 'designs_total' => $designs_total, 'extras_total' => $extras_total]);
+
+    }
+    public function ammo(){
+        $ammos = shop::where('type', 4)->orderBy('id')->paginate(12);
+        $ships_total = shop::where('type', 1)->count();
+        $drones_total = shop::where('type', 2)->count();
+        $equipment_total = shop::where('type', 3)->count();
+        $ammo_total = shop::where('type', 4)->count();
+        $extras_total = shop::where('type', 5)->count();
+        $designs_total = shop::where('type', 6)->count();
+        return view('ammo', ['ammos' => $ammos, 'ships_total' => $ships_total, 'drones_total' => $drones_total,
+            'equipment_total' => $equipment_total, 'ammo_total' => $ammo_total, 'designs_total' => $designs_total, 'extras_total' => $extras_total]);
+
+    }
+    public function designs(){
+        $designs = shop::where('type', 6)->orderBy('id')->paginate(12);
+        $ships_total = shop::where('type', 1)->count();
+        $drones_total = shop::where('type', 2)->count();
+        $equipment_total = shop::where('type', 3)->count();
+        $ammo_total = shop::where('type', 4)->count();
+        $extras_total = shop::where('type', 5)->count();
+        $designs_total = shop::where('type', 6)->count();
+        return view('designs', ['designs' => $designs, 'ships_total' => $ships_total, 'drones_total' => $drones_total,
+            'equipment_total' => $equipment_total, 'ammo_total' => $ammo_total, 'designs_total' => $designs_total, 'extras_total' => $extras_total]);
+
+    }
+    public function extras(){
+        $extras = shop::where('type', 5)->orderBy('id')->paginate(12);
+        $ships_total = shop::where('type', 1)->count();
+        $drones_total = shop::where('type', 2)->count();
+        $equipment_total = shop::where('type', 3)->count();
+        $ammo_total = shop::where('type', 4)->count();
+        $extras_total = shop::where('type', 5)->count();
+        $designs_total = shop::where('type', 6)->count();
+        return view('extras', ['extras' => $extras, 'ships_total' => $ships_total, 'drones_total' => $drones_total,
+            'equipment_total' => $equipment_total, 'ammo_total' => $ammo_total, 'designs_total' => $designs_total, 'extras_total' => $extras_total]);
+
     }
     public function buy(Request $request){
 

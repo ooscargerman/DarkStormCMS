@@ -179,27 +179,28 @@
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
                         </ol>
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="https://sharedimages-ns.bpsecure.com/darkorbit/news/obsidian-box_201804.png"
-                                     alt="Los Angeles" style="width:100%;">
+                            @foreach($news as $new )
+
+                            <div  class="item @if($new->id == $last) active @endif">
+                                <a href="/new/{{$new->id}}">
+                                <img  src="{{$new->image}}"
+                                      style="width:100%;">
+
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2>Noticia del diego</h5>
-                                        <p style="color:white;">Es gay</p>
+                                    <h2>{{$new->title}}</h5>
+                                        <p style="color:white;">{{$new->description}}</p>
+                                </a>
                                 </div>
                             </div>
 
-                            <div class="item">
-                                <img src="https://sharedimages-ns.bpsecure.com/darkorbit/news/discordsocial.png"
-                                     alt="Chicago" style="width:100%;">
-                            </div>
+                            @endforeach
 
-                            <div class="item">
-                                <img src="https://i.imgur.com/wfeTDnw.jpg" alt="New york" style="width:100%;">
-                            </div>
                         </div>
 
                         <!-- Left and right controls -->

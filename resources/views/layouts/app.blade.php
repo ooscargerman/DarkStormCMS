@@ -168,7 +168,7 @@
                                             <li><a href="/shop"><i class="fa fa-rocket"></i> SHIPS</a></li>
                                             <li><a href="/shop/drones"><i class="fa fa-dot-circle-o"></i> DRONES</a></li>
                                             <li><a href="shortcode-animations.html"><i class="et-expand"></i> ANIMATIONS</a></li>
-                                           
+
                                         </ul>
                                     </li>
                                      

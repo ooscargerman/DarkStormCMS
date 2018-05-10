@@ -149,8 +149,11 @@
 
                         <ul class="list-group list-group-bordered list-group-noicon uppercase">
                             <li class="list-group-item"><a href="/shop"><span class="size-11 text-muted pull-right">({{ $ships_total }})</span> SHIPS</a></li>
-                            <li class="list-group-item"><a href="/shop/drones"><span class="size-11 text-muted pull-right">({{ $drones_total }})</span> DRONES</a></li>
-
+                            <li class="list-group-item active"><a href="/shop/drones"><span class="size-11 text-muted pull-right">({{ $drones_total }})</span> DRONES</a></li>
+                            <li class="list-group-item"><a href="/shop/equipment"><span class="size-11 text-muted pull-right">({{ $equipment_total }})</span> EQUIPMENT</a></li>
+                            <li class="list-group-item"><a href="/shop/ammo"><span class="size-11 text-muted pull-right">({{ $ammo_total }})</span> AMMO</a></li>
+                            <li class="list-group-item"><a href="/shop/extras"><span class="size-11 text-muted pull-right">({{ $extras_total }})</span> EXTRAS</a></li>
+                            <li class="list-group-item"><a href="/shop/designs"><span class="size-11 text-muted pull-right">({{ $designs_total }})</span> DESIGNS</a></li>
                         </ul>
 
                     </div>

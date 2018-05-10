@@ -3,6 +3,7 @@
 namespace DarkStorm\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DarkStorm\news;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $news = news::orderBy('id', 'DESC' )->limit(5)->get();
+        $last = news::max('id');
+        return view('home', ['news' => $news, 'last' => $last]);
     }
+
 }
